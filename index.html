@@ -940,7 +940,7 @@
 
                     <div class="metrics-grid">
                         <div class="metric-card">
-                            <div class="metric-value">18hrs</div>
+                            <div class="metric-value">18hrs per Background Check Report</div>
                             <div class="metric-label">Avg TAT</div>
                             <div class="metric-change negative">▲ 12%</div>
                         </div>
@@ -1029,8 +1029,6 @@
                                 <tr>
                                     <td>#12809</td>
                                     <td><span style="background: #fecaca; color: #991b1b; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; font-weight: 500;">DELAYED</span></td>
-                                    <td>#12801</td>
-                                    <td><span style="background: #fecaca; color: #991b1b; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.75rem; font-weight: 500;">DELAYED</span></td>
                                     <td>Awaiting Candidate</td>
                                     <td>6 days</td>
                                 </tr>
@@ -1100,9 +1098,7 @@
                             <li><strong>New York leads efficiency</strong> with 12-hour average, benefiting from centralized court systems</li>
                             <li><strong>Miami shows longest TAT</strong> at 19 hours due to multilingual verification requirements</li>
                             <li><strong>California processing</strong> affected by privacy regulations requiring additional verification steps</li>
-                            <li><strong>Package complexity correlates</strong> directly with turnaround time as expected</li>
-                            <li>Geographic variations help employers set realistic expectations by location</li>
-                        </ul>
+                         </ul>
                     </div>
                 </div>
 
@@ -1131,7 +1127,7 @@
                             <span class="bar-label">Criminal</span>
                         </div>
                         <div class="bar" style="height: 80%; cursor: pointer;" onclick="drillDownSearchType('employment')">
-                            <span class="bar-value">16hrs</span>
+                            <span class="bar-value">24hrs</span>
                             <span class="bar-label">Employment</span>
                         </div>
                         <div class="bar" style="height: 70%; cursor: pointer;" onclick="drillDownSearchType('education')">
@@ -1143,7 +1139,7 @@
                             <span class="bar-label">MVR</span>
                         </div>
                         <div class="bar" style="height: 35%; cursor: pointer;" onclick="drillDownSearchType('credit')">
-                            <span class="bar-value">7hrs</span>
+                            <span class="bar-value">1hr</span>
                             <span class="bar-label">Credit</span>
                         </div>
                     </div>
@@ -1224,7 +1220,7 @@
                         </div>
                         <div class="metric-card">
                             <div class="metric-value">8.2%</div>
-                            <div class="metric-label">MVR</div>
+                            <div class="metric-label">Employment</div>
                             <div class="metric-change negative">▼ 0.5%</div>
                         </div>
                     </div>
@@ -1271,7 +1267,7 @@
                                     <td style="color: #ef4444;">▼ 0.5%</td>
                                 </tr>
                                 <tr>
-                                    <td>Credit Check</td>
+                                    <td>Employment</td>
                                     <td>892</td>
                                     <td>267</td>
                                     <td>29.9%</td>
@@ -1291,7 +1287,7 @@
                     <div class="insight-box">
                         <h4>Hit Ratio Analysis</h4>
                         <ul>
-                            <li><strong>Credit checks show highest hit rate</strong> at 29.9%, indicating thorough financial screening</li>
+                            <li><strong>Employment checks show highest hit rate</strong> at 29.9%, indicating thorough financial screening</li>
                             <li><strong>Criminal hit rates vary by jurisdiction</strong> - state searches slightly higher than county</li>
                             <li><strong>Low federal criminal hit rate</strong> reflects the serious nature of federal offenses</li>
                             <li><strong>MVR trends declining</strong> may indicate improved driver safety awareness</li>
@@ -1738,89 +1734,44 @@
                     </div>
                 </div>
 
-                <!-- Report: Research Efficiency -->
+                <!-- Report: Scheduled Reports -->
                 <div class="report-content" id="report-1-1">
                     <div class="report-header">
-                        <h2>Research Team Efficiency</h2>
-                        <select class="date-selector">
-                            <option>Last 30 Days</option>
-                            <option>Last Quarter</option>
-                            <option>Last Year</option>
-                        </select>
+                        
                     </div>
 
                     <div class="metrics-grid">
                         <div class="metric-card">
-                            <div class="metric-value">47</div>
-                            <div class="metric-label">Orders/Researcher/Day</div>
-                            <div class="metric-change positive">▲ 12% from last month</div>
-                        </div>
-                        <div class="metric-card">
-                            <div class="metric-value">23 min</div>
-                            <div class="metric-label">Avg Research Time</div>
-                            <div class="metric-change positive">▼ 8% from last month</div>
-                        </div>
-                        <div class="metric-card">
-                            <div class="metric-value">96.3%</div>
-                            <div class="metric-label">First-Pass Accuracy</div>
-                            <div class="metric-change positive">▲ 1.7% from last month</div>
+                            <div class="metric-value">4</div>
+                            <div class="metric-label">Custom Reports</div>
                         </div>
                     </div>
 
                     <div class="chart-container">
-                        <div class="chart-title">Research Productivity by Team Member</div>
+                        <div class="chart-title">Scheduled Report Names</div>
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Researcher</th>
-                                    <th>Daily Avg</th>
-                                    <th>Accuracy</th>
-                                    <th>Specialty</th>
-                                    <th>Performance</th>
+                                    <th>Report</th>
+                                    <th>Day of Week Scheduled</th>
+                                    <th>Time Report Runs</th>
+                                    <th>Email Addresses</th>
+                                 
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Sarah M.</td>
-                                    <td>52</td>
-                                    <td>97.8%</td>
-                                    <td>Criminal Records</td>
-                                    <td>⭐ Exceeding</td>
+                                    <td>Harris County TAT</td>
+                                    <td>M/W/F</td>
+                                    <td>8 AM CST</td>
+                                    <td>CODY.REEVES@SOFTWARE.COM</td>
                                 </tr>
-                                <tr>
-                                    <td>Mike R.</td>
-                                    <td>49</td>
-                                    <td>96.1%</td>
-                                    <td>Employment</td>
-                                    <td>✅ Meeting</td>
-                                </tr>
-                                <tr>
-                                    <td>Jessica L.</td>
-                                    <td>45</td>
-                                    <td>98.2%</td>
-                                    <td>Education</td>
-                                    <td>✅ Meeting</td>
-                                </tr>
-                                <tr>
-                                    <td>David K.</td>
-                                    <td>43</td>
-                                    <td>95.7%</td>
-                                    <td>Court Records</td>
-                                    <td>⚠️ Below Target</td>
-                                </tr>
+                               
                             </tbody>
                         </table>
                     </div>
 
-                    <div class="insight-box">
-                        <h4>Efficiency Insights</h4>
-                        <ul>
-                            <li><strong>12% productivity increase</strong> driven by new workflow tools</li>
-                            <li><strong>Sarah M. leading performance</strong> with 52 orders/day at 97.8% accuracy</li>
-                            <li><strong>David K. needs support</strong> - consider additional training or workload adjustment</li>
-                            <li>Team averaging above target performance of 45 orders/day</li>
-                        </ul>
-                    </div>
+                 
                 </div>
 
                 <!-- Report: Workflow Analysis -->
